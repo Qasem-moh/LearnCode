@@ -1,39 +1,35 @@
-var myArray = [
-  '<img src="https://pbs.twimg.com/profile_images/1369211259929980932/7D52dWCy.jpg" width=250px height=250px alt= "" wi/>',
-  '<img src="https://media.threatpost.com/wp-content/uploads/sites/103/2020/02/18155303/barcelona.jpg" width=250px height=250px alt= ""/>',
-  '<img src="https://www.goalinn.com/f/13766/137663848/safta-fc-barcelona-original.jpg" width=250px height=250px alt= ""/>',
-];
+var user = prompt("Do You Like Coding");
 
-
-
-var myArray2 = [
-  '<img src="https://i.ibb.co/zGXPSXs/b1.png" width=250px height=250px alt= "" wi/>',
-  '<img src="https://i.ibb.co/YLvQKNF/b2.jpg" width=250px height=250px alt= ""/>',
-  '<img src="https://i.ibb.co/HN8yYWq/b3.png" width=250px height=250px alt= ""/>',
-];
-
-// var randomItem1 = myArray2[Math.floor(Math.random() * myArray2.length)];
-
-
-
-var userpopu = prompt("Enter favorite team");
-
-while (userpopu !== "real" && userpopu !== "barch") {
-  userpopu = prompt("Enter favorite team");
+while (user !== "yes") {
+  alert("Good Luck");
+  break;
 }
 
-var imgNumnber =prompt( "How many want image?");
-for (var i = 1; i <= imgNumnber; i++) {
-var randomItem1 = myArray2[Math.floor(Math.random() * myArray2.length)];
-var randomItem = myArray[Math.floor(Math.random() * myArray.length)];
+whatLang();
+function whatLang() {
+  var ask1 = prompt("Do You have any knowledge in coding?");
+  return ask1;
+}
 
-  if (userpopu== "real"){
-    var image = randomItem1;
-  
-    document.write(image);
-  }else if(userpopu== "barch"){
-        var image1 = randomItem;
-    document.write(image1);
-}}
+continueUser("java");
+function continueUser(lang) {
+  var userjava = prompt("Do you like coding" + " " + lang);
+  while (userjava === "yes") {
+    alert("welcome in coding" + " " + lang);
+   
+    break;
+  }
+}
+//**** */
+continueUser("python");
+function continueUser(lang1) {
+  var userpython = prompt("Do you like coding" + " " + lang1);
+  while (userpython === "yes") {
+    alert("welcome in coding" + " " + lang1);
+    var pimg1 =
+      '<img src="https://quarch.com/wp-content/uploads/2019/07/python-logo-with-larger-white-border_0.jpg" alt="java"';
 
-
+    document.write(pimg1);
+    break;
+  }
+}
