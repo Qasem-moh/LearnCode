@@ -16,7 +16,10 @@ function continueUser(lang) {
   var userjava = prompt("Do you like coding" + " " + lang);
   while (userjava === "yes") {
     alert("welcome in coding" + " " + lang);
-   
+    var pimg =
+      '<img src="https://e3arabi.com/wp-content/uploads/2021/03/Java-Debugging-Tips-1280x720-1.jpg" alt="java"';
+    
+    document.write(pimg);
     break;
   }
 }
